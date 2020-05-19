@@ -117,12 +117,6 @@ int main(int, char**)
 			Vec4i L = lines[i];
 			line(img_original, Point(L[0], L[1]), Point(L[2], L[3]),
 				Scalar(0, 0, 255), 1, LINE_AA);
-
-			int curve = rand() % 4;
-			int norm = (rand()% 2) + 30;
-			int theta = (rand() % 2) - 20;
-			cout << "line detect : " << lines.size() 
-				<<" rho : "<< curve << " norm  : " << norm <<" theta : " << theta << endl;
 		}
 
 		imgRotate(img_original, iAngle);
