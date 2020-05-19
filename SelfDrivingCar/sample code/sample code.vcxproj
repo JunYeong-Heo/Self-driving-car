@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{59C7157D-6F2F-4D0A-811D-E6827ACCBE93}</ProjectGuid>
+    <RootNamespace>samplecode</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\SelfDrivingCar\cpp\3calibration.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\application_trace.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\bgfg_segm.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\calibration.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\camshiftdemo.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\cloning_demo.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\cloning_gui.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\connected_components.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\contours2.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\convexhull.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\cout_mat.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\create_mask.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\dbt_face_detection.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\delaunay2.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\demhist.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\detect_blob.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\detect_mser.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\dft.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\digits.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\distrans.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\dis_opticalflow.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\drawing.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\edge.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\ela.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\em.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\facedetect.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\facial_features.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\falsecolor.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\fback.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\ffilldemo.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\filestorage.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\fitellipse.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\grabcut.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\imagelist_creator.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\imagelist_reader.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\image_alignment.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\inpaint.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\intelligent_scissors.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\intersectExample.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\kalman.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\kmeans.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\laplace.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\letter_recog.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\lkdemo.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\logistic_regression.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\mask_tmpl.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\matchmethod_orb_akaze_brisk.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\minarea.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\morphology2.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\neural_network.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\npr_demo.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\opencv_version.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\pca.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\peopledetect.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\phase_corr.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\points_classifier.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\polar_transforms.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\qrcode.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\segment_objects.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\select3dobj.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\simd_basic.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\smiledetect.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\squares.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\stereo_calib.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\stereo_match.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\stitching.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\stitching_detailed.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\text_skewness_correction.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\train_HOG.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\train_svmsgd.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\travelsalesman.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\tree_engine.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\videocapture_basic.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\videocapture_camera.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\videocapture_gphoto2_autofocus.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\videocapture_gstreamer_pipeline.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\videocapture_image_sequence.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\videocapture_intelperc.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\videocapture_openni.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\videocapture_starter.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\videowriter_basic.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\warpPerspective_demo.cpp" />
+    <ClCompile Include="..\SelfDrivingCar\cpp\watershed.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\SelfDrivingCar\cpp\CMakeLists.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
