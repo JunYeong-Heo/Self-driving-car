@@ -1,0 +1,10 @@
+void setroi(Mat& InputImg, Mat& OutputImg, Point&& pt1, Point&& pt2)
+{
+	Rect roiRect = Rect(pt1, pt2);
+	Mat roi(InputImg, roiRect);
+	OutputImg = roi;
+	return;
+}
+
+resize(img_original, img_original, Size(360, 240), 0, 0, INTER_LINEAR);
+//이미지 해상도 설정

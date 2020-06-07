@@ -150,11 +150,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="canny_edge_hough_line_detect.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="ColorDetect.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Lanedetect.cpp" />
+    <ClCompile Include="lanedetected.cpp" />
+    <ClCompile Include="Lanereal.cpp" />
+    <ClCompile Include="lane_detect.cpp" />
+    <ClCompile Include="main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="roi.cpp" />
+    <ClCompile Include="rr.cpp" />
+    <ClCompile Include="simpleLanddetect.cpp" />
+    <ClCompile Include="stopDetect.cpp" />
+    <ClCompile Include="stop_detect_result.cpp" />
+    <ClCompile Include="terneleq.cpp" />
+    <ClCompile Include="test.cpp" />
+    <ClCompile Include="trabar.cpp" />
+    <ClCompile Include="traffic_color_detectr.cpp" />
+    <ClCompile Include="traficLight.cpp" />
+    <ClCompile Include="tunneldetect.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="edge.h" />
+    <ClInclude Include="linefinder.h" />
     <ClInclude Include="pch.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="myfunc.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

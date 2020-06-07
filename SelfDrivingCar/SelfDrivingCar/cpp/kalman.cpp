@@ -29,6 +29,7 @@ static void help()
 
 int main(int, char**)
 {
+
     help();
     Mat img(500, 500, CV_8UC3);
     KalmanFilter KF(2, 1, 0);
